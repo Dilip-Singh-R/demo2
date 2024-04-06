@@ -1,4 +1,7 @@
 pipeline {
+        agent {
+		label 'ssh'
+	}
 	stages {
 		stage ('build') {
 			steps {
